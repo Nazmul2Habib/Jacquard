@@ -20,8 +20,8 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleDebug
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
-        with:
-          name: apk-artifact
-          path: app/build/outputs/apk/**/*.apk #পাথ ঠিক করা হয়েছে
+   - name: Upload APK
+     uses: actions/upload-artifact@v3
+     with:
+       name: apk-artifact
+       path: app/build/outputs/apk/**/*.apk  # Wildcard ব্যবহার করুন

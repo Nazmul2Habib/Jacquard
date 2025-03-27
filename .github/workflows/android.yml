@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: apk-artifact
-          path: app/build/outputs/apk/**/*.apk # পাথ ঠিক করা হয়েছে
+          path: app/build/outputs/apk/**/*.apk #পাথ ঠিক করা হয়েছে

@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Grant execute permission to gradlew
+        run: chmod +x gradlew
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
@@ -25,5 +28,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: jacquard-apk
-          path: app/build/outputs/apk/debug/app-debug.apk # Exact path
+          name: apk-artifact
+          path: app/build/outputs/apk/debug/app-debug.apk

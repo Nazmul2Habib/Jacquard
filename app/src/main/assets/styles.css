@@ -1,0 +1,196 @@
+:root {
+    --primary: #2F80ED;
+    --secondary: #27AE60;
+    --accent: #EB5757;
+    --purple: #9B51E0;
+    --text: #2D3436;
+    --bg: #F8F9FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.lang-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31,38,135,0.15);
+    width: 95%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.input-card {
+    background: #F8FAFF;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 8px rgba(47,128,237,0.2);
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+/* রেজাল্ট পৃষ্ঠা */
+.result-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.total-time {
+    background: linear-gradient(135deg, var(--primary), #256DC2);
+    color: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.time {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin: 2rem 0;
+}
+
+.result-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+.blue { background: #E3F2FD; color: var(--primary); }
+.green { background: #E8F5E9; color: var(--secondary); }
+.purple { background: #F3E5F5; color: var(--purple); }
+.red { background: #FFEBEE; color: var(--accent); }
+
+.value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+/* বাটন স্টাইল */
+.main-btn, .back-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.main-btn {
+    background: var(--primary);
+    color: white;
+}
+
+.back-btn {
+    background: #E0E0E0;
+    color: var(--text);
+}
+
+.btn-icon {
+    width: 24px;
+    height: 24px;
+}

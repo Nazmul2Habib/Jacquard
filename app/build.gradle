@@ -1,13 +1,11 @@
-  plugins {
-       id 'com.android.application'
-       id 'org.jetbrains.kotlin.android'
-   }
-
-   android {
-    buildTypes {
-        debug {
-            debuggable true
-            // ...
-        }
+android {
+    defaultConfig {
+        minSdkVersion 21 // 16 থেকে 21 তে পরিবর্তন
+        targetSdkVersion 33
     }
-   }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.10.1' // ভার্সন আপডেট
+    implementation platform('androidx.compose:compose-bom:2023.06.01')
+}
